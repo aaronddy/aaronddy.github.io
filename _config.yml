@@ -24,7 +24,7 @@ description              : "Hacer cualquier cosa que quiero"
 url                      : "https://aaronddy.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "aaronddy/aaronddy.github.io"
-teaser                   : "/assets/images/lisbon.JPEG"
+teaser                   : #"/assets/images/lisbon.JPEG"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -95,10 +95,10 @@ analytics:
 # Site Author
 author:
   name             : "aaronddy"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/london1.jpg"
   bio              : "as Data Analyst"
-  location         : "Somewhere"
-  email            :
+  location         : "South Korea"
+  email            : "aaronddy94@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
