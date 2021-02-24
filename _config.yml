@@ -52,7 +52,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "aaronddy"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Daye Kang as Data Analyst"
+  bio              : "as Data Analyst"
   location         : "Somewhere"
   email            :
   links:
