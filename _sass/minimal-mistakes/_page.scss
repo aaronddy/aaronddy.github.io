@@ -70,7 +70,7 @@ body {
 
 .page__title {
   margin-top: 0;
-  line-height: 1;
+  line-height: 3;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -108,7 +108,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: 0.8m;
   }
 
   /* paragraph indents */
