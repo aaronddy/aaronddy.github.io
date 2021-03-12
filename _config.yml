@@ -24,7 +24,7 @@ description              : "Hacer cualquier cosa que quiero"
 url                      : "https://aaronddy.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "aaronddy/aaronddy.github.io"
-teaser                   : "/assets/images/IMG_2002.jpg"
+teaser                   : "/assets/images/logo.jpeg"
 logo                     : #"/assets/images/logo.jpeg"
 masthead_title           : ""
 # breadcrumbs            : false # true, false (default)
@@ -52,7 +52,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : true
+search                   : false
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "aaronddy"
   avatar           : "/assets/images/profile1.jpg"
-  bio              : "as Data Analyst"
+  bio              : "going on make gradual improvements in processing, extracting, and analyzing Data 😎"
   location         : "South Korea"
   email            : #"aaronddy94@gmail.com"
   links:
