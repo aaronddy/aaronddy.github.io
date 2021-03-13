@@ -5,6 +5,7 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
+  padding-left: 3em;
 
   @include breakpoint($large) {
     float: right;
@@ -13,8 +14,8 @@
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    // width: calc(100% - #{$right-sidebar-width});
+    // padding-right: $right-sidebar-width;
   }
 }
 
