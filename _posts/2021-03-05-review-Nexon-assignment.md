@@ -7,7 +7,7 @@ categories:
 tags:
   - [Review, DataAnlysis, Python, Algorithm]
 
-toc: true
+toc: false
 toc_sticky: false
 toc_label: "어떻게 진행할 것이냐"
 toc_icon: "cookie-bite"
