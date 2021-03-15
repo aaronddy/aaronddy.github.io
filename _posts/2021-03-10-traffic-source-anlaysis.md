@@ -7,7 +7,7 @@ categories:
 tags:
   - [BA, MySQL, traffic, session, UTM, analysis]
 
-toc: false
+toc: true
 toc_sticky: false
 toc_label: "어떻게 진행할 것이냐"
 toc_icon: "cookie-bite"
@@ -45,7 +45,8 @@ last_modified_at: 2021-03-14
 # ✔ '트래픽 소스(Traffic Source)'로 무엇을, 어떻게 분석할까? 
   트래픽 소스를 이용한 분석은 '이용자들이 어떻게 유입되고, 어떠한 채널의 세션에서 판매나 수익으로 전환되었는지(전환율)' 등을 파악하는 것이다. 
 
-### 1. 주요 table 소개
+A. 주요 table 소개
+
 1) website_sessions 테이블
 
 - website_session_id: primary key, 웹 사이트 세션에 부여된 id
@@ -76,8 +77,10 @@ last_modified_at: 2021-03-14
 - price_usd: 판매가(USD)
 - cogs_usd: 매출원가(USD)
 
+<br>
 
-### 2. 분석 objects
+B. 분석 objects
+
 1). 데이터베이스(MySQL)에 저장된 `utm parameter`를 이용해 유료 웹사이트 세션(paid website session)을 파악.<br>
 2). sessions 테이블과 orders 테이블을 'join'해 유료 캠페인으로 얼마나 수익을 만들어 냈는지(전환율이 어떠한지)를 파악.
 
@@ -107,9 +110,9 @@ ORDER BY 4 DESC;
 
 # ✔ 어떤 요청이 들어올 수 있을까?
 
-1. 웹 사이트 세션이 어떤 경로로 유입되고 있는지 알고 싶습니다. UTM source, UTM campaign, referring domain 을 가지고 세션 양(volume)이 어떠한지 파악해 주세요. (2012년 4월 12일 기준)
+A. 웹 사이트 세션이 어떤 경로로 유입되고 있는지 알고 싶습니다. UTM source, UTM campaign, referring domain 을 가지고 세션 양(volume)이 어떠한지 파악해 주세요. (2012년 4월 12일 기준)
 
-2. `gsearch` - `nonbrand`의 캠페인 세션 유입이 구매로 이어지는 전환율(CVR)이 어떠한지 궁금합니다. 최소 4% 이상이면 유료 캠페인 비용을 늘리고, 그렇지 않으면 감축할 예정입니다.
+B. `gsearch` - `nonbrand`의 캠페인 세션 유입이 구매로 이어지는 전환율(CVR)이 어떠한지 궁금합니다. 최소 4% 이상이면 유료 캠페인 비용을 늘리고, 그렇지 않으면 감축할 예정입니다.
 
 <br>
 
@@ -119,7 +122,7 @@ ORDER BY 4 DESC;
 
 # ✔ 어떻게 SQL 쿼리를 작성할까?
 
-### 1. utm source, utm campaign, referring domain => Group By & website_session_id => Count 
+A. utm source, utm campaign, referring domain => Group By & website_session_id => Count 
 
 ```sql
 
@@ -146,7 +149,7 @@ ORDER BY 4 DESC;
 
 <br>
 
-### 2. website_sessions, orders => 테이블 조인 & website_session_id, order_id => Count 
+B. website_sessions, orders => 테이블 조인 & website_session_id, order_id => Count 
 
 ```sql
 
