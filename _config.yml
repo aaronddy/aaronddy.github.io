@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Seethrough"
+title                    : "오늘도 기록을 남깁니다"
 title_separator          : "-"
 subtitle                 : 
 name                     : "aaronddy"
-description              : "Hacer cualquier cosa que quiero"
+description              : "뭐든 하자"
 url                      : "https://aaronddy.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "aaronddy/aaronddy.github.io"
 teaser                   : "/assets/images/logo.jpeg"
-logo                     : #"/assets/images/logo.jpeg"
+logo                     : "/assets/favicon_io/favicon-16x16.png"
 masthead_title           : ""
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -96,8 +96,8 @@ analytics:
 author:
   name             : "aaronddy"
   avatar           : "/assets/images/profile1.jpg"
-  bio              : "going on make gradual improvements in processing, extracting, and analyzing Data 😎"
-  location         : "South Korea"
+  bio              : "오늘도 열심히 데이터를 가지고 이것저것 해보고 있습니다. " #"going on make gradual improvements in processing, extracting, and analyzing Data 😎"
+  location         : "흥덕흥덕"
   email            : #"aaronddy94@gmail.com"
   links:
     - label: "Email"
