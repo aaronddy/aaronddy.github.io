@@ -61,7 +61,7 @@ A. 주요 table 소개
 
 2) website_pageviews 테이블
 
-- website_pageview_id: primary key, 웹 사이트 페이지뷰에 부여된 id
+- website_pageview_id: primary key, 해당 테이블의 고유키로 1씩 자동 증가
 - created_at: timestamp, 해당 페이지뷰에 접속할 때의 시간
 - website_session_id: foreign key, website_sessions 테이블의 주요키이자 website_pageviews 테이블의 외래키
 - pageview_url: 접속한 페이지뷰 URL
